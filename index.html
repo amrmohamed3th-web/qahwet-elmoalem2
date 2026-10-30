@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قهوة المعلم | قهوة بلدي أصيلة</title>
+  <meta name="description" content="قهوة المعلم — قهوة بلدي أصيلة بطعم زمان. قهوة تركي على الفحم، شاي كشري، سحلب، طاولة ودومينو، وقعدة حلوة مع الصحاب." />
+  <meta name="theme-color" content="#2e2119" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">قهوة المعلم</a>
+      <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+        <a href="#about">حكايتنا</a>
+        <a href="#menu">المنيو</a>
+        <a href="#experience">القعدة</a>
+        <a href="#gallery">الصور</a>
+        <a href="#visit">زورنا</a>
+        <a href="#reserve" class="btn btn--brass nav__cta">احجز ترابيزة</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="افتح القائمة" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <img src="./hero.png" alt="قهوة بلدي في حارة قديمة وقت المغرب والفوانيس منوّرة" class="hero__img" />
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light">من ١٩٧٤ في المحلة الكبرى</p>
+        <h1 class="hero__title">قهوة المعلم</h1>
+        <p class="hero__text">قهوة بلدي أصيلة بطعم زمان. فنجان تركي على الفحم، كوباية شاي في الخمسينة، وطاولة مع الصحاب… القعدة هنا ليها طعم تاني.</p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--brass">اطلب اللي على مزاجك</a>
+          <a href="#reserve" class="btn btn--ghost">احجز ترابيزتك</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media">
+          <img src="./interior.png" alt="المعلم بيعمل القهوة على النار جوه القهوة" loading="lazy" />
+        </div>
+        <div class="about__body">
+          <p class="eyebrow">حكايتنا</p>
+          <h2 class="section-title">من أيام الحاج عبده… لحد النهارده</h2>
+          <p>سنة ١٩٧٤ فتح الحاج عبده "المعلم" قهوته الصغيرة في قلب المحلة الكبرى، بكنكة نحاس وشوية كراسي خشب وقلب كبير. ومن يومها والقهوة بقت بيت تاني لأهل الحتة.</p>
+          <p>النهارده ولاده وأحفاده شايلين نفس الأمانة: البن بيتحمّص طازة، الشاي بيتعمل على مهله، والزبون بيتعامل كأنه من أهل البيت.</p>
+          <dl class="stats">
+            <div><dt>سنة في نفس الحتة</dt><dd>+٥٠</dd></div>
+            <div><dt>أجيال من المعلمين</dt><dd>٣</dd></div>
+            <div><dt>فنجان كل يوم</dt><dd>+٢٠٠</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section section--alt" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">المنيو</p>
+          <h2 class="section-title">اطلب اللي على مزاجك</h2>
+        </div>
+        <div class="tabs" role="tablist" aria-label="أقسام المنيو" id="menuTabs"></div>
+        <div class="menu-grid" id="menuPanel" role="tabpanel"></div>
+        <p class="menu-note">الأسعار بالجنيه المصري وشاملة الخدمة.</p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--dark" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow--light">القعدة</p>
+          <h2 class="section-title">مش بس فنجان قهوة… دي قعدة</h2>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            <h3>قهوة على الفحم</h3>
+            <p>البن بيتحمّص عندنا ويتطحن طازة، والقهوة بتستوي على مهلها على الفحم.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><circle cx="15.5" cy="15.5" r="1.5"/><circle cx="15.5" cy="8.5" r="1.5"/><circle cx="8.5" cy="15.5" r="1.5"/></svg>
+            <h3>طاولة ودومينو</h3>
+            <p>طاولات صدف أصلية ودومينو وكوتشينة… والمكسب عليك والشاي علينا.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="m17 2-5 5-5-5"/></svg>
+            <h3>ماتشات على الكبير</h3>
+            <p>كل ماتشات الدوري والمنتخب على شاشة كبيرة وسط الجمهور.</p>
+          </article>
+          <article class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h3>قعدة عيلة وصحاب</h3>
+            <p>مكان واسع جوه وبرّه في الحارة، ينفع للقعدات الكبيرة والمناسبات.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">الصور</p>
+          <h2 class="section-title">لقطات من القهوة</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--tall"><img src="./turkish-coffee.png" alt="قهوة تركي بتتصب من الكنكة النحاس" loading="lazy" /></figure>
+          <figure class="gallery__item"><img src="./tea.png" alt="شاي بالنعناع في كوبايات إزاز على صينية نحاس" loading="lazy" /></figure>
+          <figure class="gallery__item"><img src="./sahlab.png" alt="سحلب بالمكسرات وجنبه بسبوسة" loading="lazy" /></figure>
+          <figure class="gallery__item gallery__item--wide"><img src="./tawla.png" alt="طاولة صدف ودومينو وكوباية شاي" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">قالوا علينا</p>
+          <h2 class="section-title">كلام الزباين</h2>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <div class="stars" aria-label="تقييم ٥ من ٥">★★★★★</div>
+            <blockquote>أحلى قهوة تركي في مصر من غير مبالغة. المعلم فاكر طلبي من أول ما أقعد.</blockquote>
+            <figcaption><strong>محمود السيد</strong><span>زبون من ٢٠ سنة</span></figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars" aria-label="تقييم ٥ من ٥">★★★★★</div>
+            <blockquote>جيت مع صحابي ولفينا المحلة، القعدة تحفة والسحلب كان خيال.</blockquote>
+            <figcaption><strong>سارة عادل</strong><span>زائرة</span></figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars" aria-label="تقييم ٥ من ٥">★★★★★</div>
+            <blockquote>طاولة صدف أصلي وشاي في الخمسينة وماتش الأهلي… محتاج إيه تاني؟</blockquote>
+            <figcaption><strong>كريم فتحي</strong><span>بطل الطاولة</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="section" id="reserve">
+      <div class="container reserve">
+        <div class="reserve__intro">
+          <p class="eyebrow">الحجز</p>
+          <h2 class="section-title">احجز ترابيزتك قبل الماتش</h2>
+          <p>املا البيانات وهنكمّل معاك على واتساب ونأكدلك الحجز في دقايق. ولو حابب تكلمنا على طول:</p>
+          <a href="tel:+201000000000" class="phone-link" dir="ltr">+20 100 000 0000</a>
+        </div>
+        <form class="form" id="reserveForm" novalidate>
+          <div class="field">
+            <label for="name">الاسم</label>
+            <input id="name" name="name" type="text" placeholder="اسمك" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="guests">عدد الأفراد</label>
+            <select id="guests" name="guests">
+              <option>١</option><option selected>٢</option><option>٣</option><option>٤</option>
+              <option>٥</option><option>٦</option><option>٨</option><option>+١٠</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="date">اليوم</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div class="field">
+            <label for="time">الساعة</label>
+            <input id="time" name="time" type="time" required />
+          </div>
+          <div class="field field--full">
+            <label for="notes">ملاحظات (اختياري)</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="مثلاً: عايزين ترابيزة برّه قدام الشاشة"></textarea>
+          </div>
+          <p class="form__error" id="formError" role="alert" hidden></p>
+          <button type="submit" class="btn btn--primary field--full">ابعت الحجز على واتساب</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="section section--alt" id="visit">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">زورنا</p>
+          <h2 class="section-title">مستنيينك</h2>
+        </div>
+        <div class="visit">
+          <div class="visit__info">
+            <div class="info-card">
+              <h3>العنوان</h3>
+              <p>المحلة الكبرى، الغربية</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=30.974279,31.212602" target="_blank" rel="noopener noreferrer" class="link">افتح الاتجاهات على جوجل ماب</a>
+            </div>
+            <div class="info-card">
+              <h3>مواعيد الشغل</h3>
+              <ul class="hours">
+                <li><span>السبت – الخميس</span><span>٨ الصبح – ٢ بعد نص الليل</span></li>
+                <li><span>الجمعة</span><span>١ الضهر – ٣ الفجر</span></li>
+              </ul>
+            </div>
+            <div class="info-card">
+              <h3>التليفون</h3>
+              <a href="tel:+201000000000" class="link" dir="ltr">+20 100 000 0000</a>
+            </div>
+          </div>
+          <div class="visit__map">
+            <iframe title="موقع قهوة المعلم على الخريطة" src="https://maps.google.com/maps?q=30.974279,31.212602&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--light">قهوة المعلم</a>
+      <nav aria-label="روابط الفوتر" class="footer__nav">
+        <a href="#about">حكايتنا</a>
+        <a href="#menu">المنيو</a>
+        <a href="#gallery">الصور</a>
+        <a href="#visit">زورنا</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> قهوة المعلم. كل الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/201000000000" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="كلمنا على واتساب">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
